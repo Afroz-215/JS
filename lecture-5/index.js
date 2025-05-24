@@ -87,4 +87,31 @@ function maxSumSubarray(arr, k) {
 }
 
 
-console.log(maxSumSubarray(arr, k));
+console.log(maxSumSubarray(arr, k)); 
+
+// some() → returns true if AT LEAST ONE element matches
+let  arr1 =[1,2,3,5,6,7,8]
+let data = arr1.some((a)=> {
+    return a == 5
+})
+console.log(data)
+
+// every() → returns true ONLY IF ALL elements match
+let data2 = arr1.every((a)=> {
+    return a == 5
+})
+console.log(data2)
+
+// find() → returns the FIRST element that matches the condition
+let data3 = arr1.find((a,b,c)=>{
+    return a == 5
+})
+
+// filter() → returns ALL elements that match the condition
+console.log(data3)
+
+let data4 =arr1.filter((a,b,c)=>{
+    return a == 5
+})
+console.log(data4)
+

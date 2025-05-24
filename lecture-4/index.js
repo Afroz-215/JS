@@ -15,7 +15,7 @@
 // } );
 // console.log(arr);
 
-
+// map() → transforms each element (returns a NEW array)
 //  let data1=  arr.map((a,b,c)=>{ 
 //     // console.log(a);
 //     return a
@@ -25,6 +25,7 @@
 // console.log(data1==arr);
 
 // let arr=[1,2,3,4,5,6,7,8]
+// reduce() → combines all elements into a single value
 
 //  let data1= arr.reduce((a,b,c)=>{
 //     return a<b?a:b
@@ -34,7 +35,7 @@
 
  
 let arr=[2,3,2,3,42,4,32,5,2,5,7]
-
+// filter() → filters elements by condition (returns a NEW array)
   let data=   arr.filter((a)=>{
     return a>3
 
