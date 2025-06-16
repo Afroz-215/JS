@@ -185,7 +185,7 @@
 
 
 
-// Convert the callback-based function `fetchData(callback)` into a function that returns a Promise.
+// 7. Convert the callback-based function `fetchData(callback)` into a function that returns a Promise.
 
 
 // function fetchData(callback) {
@@ -201,13 +201,129 @@
 // )
 
 
-function fetchDataPromise(callback) {
-    return new Promise((res, rej) => {
-        setTimeout(()=>{
-            res("hello")
-        },1000)
+// function fetchDataPromise(callback) {
+//     return new Promise((res, rej) => {
+//         setTimeout(()=>{
+//             res("hello")
+//         },1000)
 
+//     })
+// }
+
+// fetchDataPromise().then((data)=>{
+//     console.log(data)
+//     console.log("done")
+// })
+
+// Async/Await Syntax:
+// 7. Create an async function that waits for 2 seconds and then logs: '2 seconds passed!' using await
+//  and setTimeout
+
+// function wait(){
+//     return new Promise((res,rej)=>{
+//         setTimeout(()=>{
+//             res("2 sec passed")
+//         },2000)
+//     })
+// }
+
+// async function main(){
+//     let a = await wait()
+//     console.log(a)
+// }
+
+// main()
+
+
+
+
+//  8. Async/Await with Try-Catch:
+//  Use try...catch to handle errors in an async function. Example: getUserData() returns a rejected
+//  Promise
+
+// function getUserData(){
+//     return new Promise((res,rej)=>{
+//         let result = false;
+//         if(result) res("resolved")
+//             else rej("rejected")
+//     })
+// }
+
+// async function main(){
+//     try{
+//         let data = await getUserData()
+//         console.log(data)
+//     }catch(error){
+//         console.log(error)
+//     }
+// }
+
+// main()
+
+//  9. Realistic Promise Example (API Mock):
+// Create an async function that mocks fetching user info using Promise.resolve after 1 second and
+// logs the name.
+
+// function fetch(){
+//     return new Promise((res,rej)=>{
+//         setTimeout(()=>{
+//             res ({
+//                 name: "afroz",
+//                 age:21,
+//                 occupation: "student"
+//             })
+//         },1000)
+//     })
+// }
+
+// async function main(){
+//     let data =await fetch()
+//     console.log(data.name)
+//     console.log(data.age)
+// }
+
+// main()
+
+// 10. Parallel Promises with Promise.all:
+//  You have 3 API calls mocked with Promises. Use Promise.all to wait for all of them and log the
+//  result
+
+
+let API1 = function () {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+             console.log("API1 IS RESOLVED")
+            resolve(" API1 resolved")
+        }, 1000)
     })
 }
 
+let API2 = function () {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            console.log("API2 IS RESOLVED")
+            resolve(" API2 resolved")
+        }, 2000)
+    })
+}
 
+let API3 = function () {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            console.log("API3 IS RESOLVED")
+            resolve(" API3 resolved")
+        }, 3000)
+    })
+}
+
+async function callApi() {
+    let a1 = API1();
+    let a2 = API2();
+    let a3 = API3();
+
+
+    let data = await Promise.all([a1, a2, a3])
+    console.log(data)
+}
+
+callApi()
