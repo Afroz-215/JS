@@ -24,13 +24,30 @@
 // }
 
 
-let city ='bina'
-let key ='9f6290d6cda9a36a63755fadee71f83d'
-let apiData =`https://api.openWeathermap.org/data/2.5/weather?q=${city}&appid=${key}`
+let inp = document.querySelector('input')
+let button = document.querySelector('button')
 
-let a=fetch(apiData).then((res)=>{
-    return res.json()
-}).then((data)=>{
-    console.log(data)
+
+button.addEventListener('click', () => {
+    let city = inp.value
+    let key = '9f6290d6cda9a36a63755fadee71f83d'
+    let apiData = `https://api.openWeathermap.org/data/2.5/weather?q=${city}&appid=${key}`
+
+    fetch(apiData).then((res) => {
+        return res.json()
+    }).then((data) => {
+        console.log(data)
+        show(data,city)
+    })
 })
+
+function show(data,city) {
+    let div = document.querySelector('div')
+    let h2 = document.createElement('h2')
+    h2.innerText = `The temperature of ${city} is ${data.main.temp}°C`
+    div.append(h2)
+    
+
+}
+
 
