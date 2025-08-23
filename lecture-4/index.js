@@ -48,6 +48,7 @@ let arr=[2,3,2,3,42,4,32,5,2,5,7]
 
    console.log(data);
    
+   
 //    let data1=   data.filter((a)=>{
 //     return a%2==0
 
