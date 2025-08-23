@@ -2,8 +2,6 @@
 // // console.log(arr.includes(3))
 // // console.log(arr.indexOf(100))
 
-
-
 // // const people = [
 // //   { name: "John", age: 25 },
 // //   { name: "Alice", age: 30 },
