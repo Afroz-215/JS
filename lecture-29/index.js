@@ -63,7 +63,7 @@
 // console.log("imure func",increment())
 // console.log("imure func",increment())
 
-// function curing
+// function currying
 
 // function add(a){
 //     return function(b){
