@@ -25,7 +25,6 @@ let totalSum =arr1.reduce((sum,b)=>{
 },0)
 console.log(totalSum)
 
-
 // console.log(arr1.length)
 // console.log(arr1[0][0])
 let sum = 0;
