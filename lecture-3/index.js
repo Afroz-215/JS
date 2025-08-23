@@ -13,7 +13,7 @@
 // for(let i=0;i<arr.length;i++){
 //     if(arr[i]>3){
 //         newA.push(arr[i])
-//     }  
+//     }
 // }
 // console.log(newA);
 
@@ -55,7 +55,10 @@
 // sum(arr)
 // console.log([]==[]);
 
-// let arr =[ {id:1,name:"afroz"},{id:2,name:"aanya"}]
+// let arr =[
+//    {id:1,name:"afroz"},
+//    {id:2,name:"aanya"}
+// ]
 
 // for(let i of arr){
 //     console.log(i.name)
@@ -93,7 +96,7 @@
 // arr.shift()
 // console.log(arr)
 
- // let arr=[1,2,3,4,5,6]
+// let arr=[1,2,3,4,5,6]
 // let target = 3
 //  let data =arr.find ((a) =>{
 //     return a == target
