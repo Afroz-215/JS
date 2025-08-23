@@ -16,7 +16,7 @@
 //     function inner(){
 //         console.log(a)
 //     }
-//  // inner
+// //  inner
 //     return inner()
 // }
 // let b = outer()
@@ -24,6 +24,10 @@
 
 // console.log(a)
 // var a =5
+
+
+// console.log(a)
+// let a =5
 
 // sum()
 // const sum=()=>{
@@ -76,3 +80,23 @@
 //                                         sum()
     
 // }
+
+// sayHi(); //  TypeError
+// let sayHi = function() {
+//   console.log("Hi");
+// };
+
+function outer() {
+  let count = 0;
+  return function inner() {
+    count++;
+    console.log(count);
+  };
+}
+
+// outer()
+// outer()
+
+const counter = outer();
+counter(); // 1
+counter(); // 2
