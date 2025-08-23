@@ -33,9 +33,6 @@
 // }
 // outer();
 
-
-
-
 // hoistTest();
 // var hoistTest = function () {
 //   console.log("Hoisted?");
