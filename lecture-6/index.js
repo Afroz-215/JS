@@ -83,8 +83,6 @@ for (let i = 0; i < str.length; i++) {
 
 console.log(result1);  // Output: "abc"
 
-
-
 // 🔍 find() = first match
 
 // 🧹 filter() = all matches
