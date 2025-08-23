@@ -26,6 +26,7 @@
 // if (isBool) console.log("hello")
 // else console.log("hii")
 
+
 // // The bitwise AND operator (&) compares two numbers bit by bit and returns a number where each bit is 1 only if both corresponding bits in the operands are 1
 // // 0101  (binary for 5)
 // // & 0011  (binary for 3)
