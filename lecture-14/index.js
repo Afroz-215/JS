@@ -36,13 +36,7 @@
 // }
 // obj.getAmount();
 
-
-
-
-
-
 // //undefined //
-
 
 // let a=8;
 // let obj ={
