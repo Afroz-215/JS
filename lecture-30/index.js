@@ -25,4 +25,12 @@
 //     console.log(value)
 // })
 
-console.log("first")
+// console.log("first")
+
+// sum();
+// var sum=(()=>{
+
+// })
+
+let a=4
+a()
